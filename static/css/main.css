@@ -299,6 +299,62 @@ main {
   color: #888;
 }
 
+.custom-file-label {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.custom-file-label:hover {
+    transform: scale(1.05);
+}
+
+#fileInput {
+    display: none; /* Hides the default file input */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#exitButton {
+  background-color: #d9534f; /* Red for Exit */
+  color: white;
+}
+
+#exitButton:hover {
+  background-color: #c9302c;
+}
+
+#continueButton {
+  background-color: #5cb85c; /* Green for Continue */
+  color: white;
+}
+
+#continueButton:hover {
+  background-color: #4cae4c;
+}
+
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .drag-area {

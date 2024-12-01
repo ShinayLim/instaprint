@@ -1,6 +1,7 @@
 document.getElementById("fileInput").addEventListener("change", function (event) {
     const files = event.target.files;
     const previewContainer = document.getElementById("previewContainer");
+    const fileNameInput = document.getElementById("fileName")
     previewContainer.innerHTML = ""; // Clear previous previews
 
     Array.from(files).forEach(file => {
@@ -34,7 +35,7 @@ document.getElementById("fileInput").addEventListener("change", function (event)
             fileName.textContent = file.name;
             previewItem.appendChild(fileName);
 
-            previewContainer.appendChild(previewItem);
+            fileNameInput.value = Array.from(files).map(file => file.name).join("; ");
         } else {
             alert(`File type not allowed: ${file.name}`);
         }

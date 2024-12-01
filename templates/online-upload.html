@@ -19,15 +19,23 @@
     </header>
 
     <main>
-        <div class="upload-area">
-            <h1>Choose File to Upload</h1>
-            <img src="./../static/images/file-upload.png" alt="sample">
-            <br>
-            <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" multiple />
+      <div class="upload-area">
+        <h1>Choose File to Upload</h1>
+        <label for="fileInput" class="custom-file-label">
+          <img src="./../static/images/file-upload.png" alt="Upload" />
+        </label>
+        <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" multiple hidden/>
+        <input type="text" id="fileName" placeholder="Selected file" readonly>
+
+        <div class="button-container">
+          <button id="exitButton" class="action-button">Exit</button>
+          <button id="continueButton" class="action-button">Continue</button>
         </div>
-        <div id="previewContainer"></div>
+      </div>
+
+      <div id="previewContainer"></div>
     </main>
 
-    <script src="main.js"></script>
+    <script src="./../static/js/main.js"></script>
   </body>
 </html>
