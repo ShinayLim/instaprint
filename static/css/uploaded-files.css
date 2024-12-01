@@ -1,0 +1,45 @@
+.upload-file-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.scan-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.qr {
+    width: 278px;
+    height: 278px;
+}
+
+.uploaded-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.file-logo {
+    width: 63px;
+    height: 77px;
+}
+
+.uploaded-file p, .scan-qr p {
+    margin: 10px 0;
+}
+
+.file-box{
+    display: grid;
+    width: 100%;
+    
+}
