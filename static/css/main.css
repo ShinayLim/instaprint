@@ -12,7 +12,7 @@ body, html {
   position: relative;
 }
 
-body::after {
+/* body::after {
   content: "";
   position: absolute;
   left: 0;
@@ -20,7 +20,7 @@ body::after {
   bottom: 0;
   height: 10px; 
   background: #700000;
-}
+} */
 
 .insta-container {
   background-image: url("./../images/background.png");
@@ -171,12 +171,15 @@ header {
 		7px 7px 0 #510300;
 }
 
-/* ==== MANUAL UPLOAD ==== */
 main {
+  padding-top: 5rem;
+}
+
+/* ==== MANUAL UPLOAD ==== */
+.manual-upload-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
   padding-top: 6rem; /* To offset fixed header */
 }
 
@@ -374,5 +377,33 @@ input[type="text"] {
 
   .drag-area button {
     font-size: 14px;
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  height: 100dvh;
+}
+.column {
+  padding: 15px;
+}
+.left {
+  flex: 1 1 25%; 
+  max-width: 25%;
+}
+.right {
+  flex: 1 1 75%;
+  max-width: 75%; 
+}
+
+
+@media (max-width: 768px) {
+  .left, .right {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 100%;
   }
 }
