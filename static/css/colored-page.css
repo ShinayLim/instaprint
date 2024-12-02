@@ -47,11 +47,12 @@
 }
 
 .amount {
-    font-size: 30px; /* Reduced font size */
+    font-size: 25px; /* Reduced font size */
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .price-container {
@@ -91,8 +92,8 @@
     width: 100%;
     height: 70%; /* Increased height */
     background-color: transparent;
-    border: 3px solid black;
-    border-radius: 35px;
+    border: 2px solid black;
+    border-radius: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
