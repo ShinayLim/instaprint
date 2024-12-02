@@ -1,0 +1,185 @@
+* {
+    overflow: hidden;
+}
+
+/* LEFT */
+
+.left {
+    width: 40%;
+    float: left;
+    /* Center the contents */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as necessary to fit your layout */
+    padding: 0;
+    margin: 0;
+}
+
+.left-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.doc {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+.doc-name {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.success {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.price {
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* RIGHT */
+
+.right {
+    width: 60%; /* Takes up 60% of the screen width */
+    float: right; /* Aligns it to the right side of the screen */
+    height: 100vh; /* Full viewport height */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Allows centering of its contents */
+    justify-content: center;
+    align-items: center;
+}
+
+.right-contents {
+    width: 100%; /* Ensures it fills the parent container */
+    height: 100%; /* Ensures it fills the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    width: 85%; /* Adjust as needed */
+    height: 70%; /* Adjust as needed */
+    background-color: transparent;
+    border: 5px solid black; /* Example border */
+    border-radius: 50px;
+    position: relative; /* Allows positioning of child elements */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Add space between choose and the container */
+    align-items: center; /* Center contents horizontally */
+    margin-right: 100px;
+}
+
+.choose-payment {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Space from top */
+}
+
+.choose {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px; /* Ensure no extra margins */
+}
+
+.rec-container {
+    width: 100%;
+    height: calc(70% - 100px); /* Remaining height after the .choose section */
+    display: flex;
+    justify-content: space-between; /* Space between the two parts */
+    align-items: center; /* Align contents vertically */
+    overflow: visible; /* Ensure contents are not clipped */
+}
+
+.rec-left, .rec-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    padding: 10px; /* Add padding for spacing inside */
+}
+
+.rec-left {
+    width: 50%; /* Adjust width as needed */
+    height: 100%; /* Ensure it fills the container */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items towards the top */
+    align-items: center; /* Center contents horizontally */
+    padding: 10px; /* Add some spacing around */
+    transform: translateY(-20px); /* Moves the entire .rec-left section up */
+    margin-bottom: 125px;
+}
+
+.rec-right {
+    width: 50%; /* Adjust width as needed */
+    height: 100%; /* Ensure it fills the container */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items towards the top */
+    align-items: center; /* Center contents horizontally */
+    padding: 10px; /* Add some spacing around */
+    transform: translateX(-75px); /* Moves the entire .rec-left section up */
+    margin-bottom: 150px;
+}
+
+.gcash-logo {
+    width: 500px; /* Adjust as needed */
+    margin-bottom: 30px;
+}
+
+.content-right {
+    font-size: 20px; /* Example content style */
+    text-align: center;
+}
+
+.coins {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.note {
+    font-size: 18px; /* Example content style */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.gcash-button, .coins-button {
+    width: 150px; /* Adjust as needed */
+    padding: 15px 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+    background-color: #543d2c; /* GCash blue color */
+
+    border-radius: 25px;
+    cursor: pointer;
+}
