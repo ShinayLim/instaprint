@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uploaded File</title>
-    <link href="./../static/css/main.css" rel="stylesheet">
-    <link href="./../static/css/uploaded-files.css" rel="stylesheet">
-</head>
-<body>
-    
+    <link href="./../static/css/main.css" rel="stylesheet" />
+    <link href="./../static/css/uploaded-files.css" rel="stylesheet" />
+  </head>
+  <body>
     <header class="header">
-        <!-- Left logo -->
-        <img src="./../static/images/pup-logo.png" alt="sample">
+      <!-- Left logo -->
+      <img src="./../static/images/pup-logo.png" alt="sample" />
 
-        <!-- Center text -->
-        <div class="center-text">INSTAPRINT</div>
+      <!-- Center text -->
+      <div class="center-text">INSTAPRINT</div>
 
-        <!-- Right logo -->
-        <img src="./../static/images/cpe-logo.png" alt="sample">
+      <!-- Right logo -->
+      <img src="./../static/images/cpe-logo.png" alt="sample" />
     </header>
 
     <div class="upload-file-container">
-        <div class="scan-qr">
-            SCAN THIS QR
-            <img class="qr" src="./../static/images/sample qr.png">
-            or visit the link below
-            www.instaprint.com
+      <div class="scan-qr">
+        <span class="uf-texts">SCAN THIS QR</span>
+        <img class="qr" src="./../static/images/sample qr.png" />
+        <span class="uf-texts">or visit the link below</span>
+        <span class="uf-texts red">www.instaprint.com</span>
+      </div>
+      <div class="uploaded-file">
+        <span class="uf-texts">UPLOADED FILES</span>
+        <div class="file-box">
+          <div class="filename">
+            <img class="file-logo" src="./../static/images/microsoftword.png" />
+            filename.docx
+          </div>
+          <div class="filename">
+            <img class="file-logo" src="./../static/images/pdf.png" />
+            filename.pdf
+          </div>
         </div>
-        <div class="uploded-file">
-            UPLOADED FILES 
-            <div class="file-box">
-                <div class="filename">
-                    <img class="file-logo" src="./../static/images/microsoftword.png">
-                    filename.docx
-                </div>
-                <div class="filename">
-                    <img class="file-logo" src="./../static/images/pdf.png">
-                    filename.pdf
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-</body>
+    <div class="modal-selected">
+      <span class="uf-texts"> FILE SELECTED </span>
+      <div class="file-display" id="file-display"></div>
+      <span class="uf-texts"> DO YOU WANT TO PROCEED? </span>
+      <div class="btn-container">
+        <button class="btn ext">EXIT</button>
+        <button class="btn conf">YES</button>
+      </div>
+    </div>
+  </body>
 </html>
-
