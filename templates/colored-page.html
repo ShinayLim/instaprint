@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manual Upload</title>
+    <title>Colored</title>
     <link href="./../static/css/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -19,21 +19,20 @@
     </header>
 
     <main>
-      <div class="upload-area">
-        <h1>Choose File to Upload</h1>
-        <label for="fileInput" class="custom-file-label">
-          <img src="./../static/images/file-upload.png" alt="Upload" />
-        </label>
-        <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" multiple hidden/>
-        <input type="text" id="fileName" placeholder="Selected file" readonly>
-
-        <div class="button-container">
-          <button id="exitButton" class="action-button">Exit</button>
-          <button id="continueButton" class="action-button">Continue</button>
+      <div class="row">
+        <div class="column left" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+          <div class="button-container">
+            <button id="exitButton" class="action-button">Exit</button>
+            <button id="continueButton" class="action-button">Continue</button>
+          </div>
+        </div>
+        <div class="column right" style="background-color:#bbb;">
+          <h2>Colored Pages Detected</h2>
+          <p>Some text..</p>
         </div>
       </div>
-
-      <div id="previewContainer"></div>
     </main>
 
     <script src="./../static/js/main.js"></script>
