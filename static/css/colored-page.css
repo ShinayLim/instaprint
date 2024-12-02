@@ -1,6 +1,6 @@
 
 .left {
-    width: 40%;
+    width: 25%;
     float: left;
     display: flex;
     justify-content: center;
@@ -16,8 +16,13 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin-left: 20px;
     gap: 0;
+}
+
+.left-contents img {
+    width: auto;
+    height: 100px;
 }
 
 .doc {
@@ -42,22 +47,28 @@
 }
 
 .amount {
-    font-size: 48px; /* Reduced font size */
+    font-size: 30px; /* Reduced font size */
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
+}
+
+.price-container {
+    margin-top: 20px;
 }
 
 .price {
-    font-size: 120px; /* Reduced font size */
+    font-size: 90px; /* Reduced font size */
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 /* RIGHT */
 .right {
-    width: 60%;
+    width: 75%;
     float: right;
     height: 100vh; 
     padding: 0;
