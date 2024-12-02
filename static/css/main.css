@@ -317,8 +317,11 @@ main {
 
 input[type="text"] {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 10px;
+  border-radius: 10px;
+  background: lightgray;
+  border: none;
 }
 
 .button-container {
