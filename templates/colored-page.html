@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colored</title>
     <link href="./../static/css/main.css" rel="stylesheet" />
+    <link href="./../static/css/colored-page.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -19,20 +20,60 @@
     </header>
 
     <main>
-      <div class="row">
-        <div class="column left" style="background-color:#aaa;">
-          <h2>Column 1</h2>
-          <p>Some text..</p>
-          <div class="button-container">
-            <button id="exitButton" class="action-button">Exit</button>
-            <button id="continueButton" class="action-button">Continue</button>
-          </div>
+      <div class="left">
+
+        <div class="left-contents">
+
+            <img src="static/images/doc.png" alt="Document Image" class="doc">
+            <p class="doc-name">YourFile.docx</p>
+            <h1 class="success">SUCCESSFULLY UPLOADED</h1>
+            <h1 class="amount">Total Amount</h1>
+            <h1 class="price">₱20</h1>
+
         </div>
-        <div class="column right" style="background-color:#bbb;">
-          <h2>Colored Pages Detected</h2>
-          <p>Some text..</p>
+
+    </div>
+
+    <div class="right">
+
+        <div class="right-contents">
+
+            <div class="rectangle">
+                
+                <!-- INSIDE OF THE RECTANGLE -->
+                <div class="rec-container">
+
+                    <!-- LEFT PART -->
+                    <div class="rec-left">
+
+                        <h1 class="selected-payment">Payment Method:</h1>
+                        <img src="static/images/coins.png" alt="coins" class="coins">
+                    
+                    </div>
+
+                    <!-- RIGHT PART -->
+                    <div class="rec-right">
+
+                        <h1 class="inserted">Inserted Amount:</h1>
+                        <h1 class="price">₱20</h1>
+                        
+                        <div class="button-container">
+
+                            <button class="pay-now">Pay Now</button>
+                            <button class="back">Back</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+        
+    </div>
+
     </main>
 
     <script src="./../static/js/main.js"></script>

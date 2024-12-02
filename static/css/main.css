@@ -170,10 +170,10 @@ header {
 		6px 6px 0 #510300,
 		7px 7px 0 #510300;
 }
-
+/* 
 main {
   padding-top: 5rem;
-}
+} */
 
 /* ==== MANUAL UPLOAD ==== */
 .manual-upload-container {
@@ -385,7 +385,7 @@ input[type="text"] {
 }
 
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -402,12 +402,5 @@ input[type="text"] {
 .right {
   flex: 1 1 75%;
   max-width: 75%; 
-}
+} */
 
-
-@media (max-width: 768px) {
-  .left, .right {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    max-width: 100%;
-  }
-}
