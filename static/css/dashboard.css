@@ -24,21 +24,31 @@
   
   .menu ul {
     list-style-type: none;
-  }
-  
-  .menu li {
+    padding-left: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
     margin: 15px 0;
     font-size: 14px;
-  }
-  
-  .menu a {
+}
+
+.menu li i {
+    margin-right: 10px; /* Add spacing between the icon and text */
+    color: #700000;    /* Icon color */
+    font-size: 16px;   /* Icon size */
+}
+
+.menu a {
     color: #292929;
     text-decoration: none;
-  }
-  
-  .menu a:hover {
+    flex: 1; /* Ensure text aligns properly with icon */
+}
+
+.menu a:hover {
     text-decoration: underline;
-  }
+}
   
   .content {
     flex: 1;
