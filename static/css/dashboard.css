@@ -32,11 +32,12 @@
   align-items: center;
   margin: 15px 0;
   font-size: 14px;
+  padding: 10px;
 }
 
 .menu li i {
   margin-right: 10px; /* Add spacing between the icon and text */
-  color: #700000;    /* Icon color */
+  color: #292929;    /* Icon color */
   font-size: 16px;   /* Icon size */
 }
 
@@ -46,8 +47,18 @@
   flex: 1; /* Ensure text aligns properly with icon */
 }
 
+.menu li:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #700000;           /* Change text color on hover */
+  cursor: pointer;
+}
+
+.menu li:hover i {
+  color: #700000; /* Change icon color to match text on hover */
+}
+
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
   
 .content {
