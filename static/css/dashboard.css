@@ -48,7 +48,7 @@
 }
 
 .menu li:hover {
-  background-color: #f0f0f0; /* Light gray background on hover */
+  background-color: #C8C8C8; /* Light gray background on hover */
   color: #700000;           /* Change text color on hover */
   cursor: pointer;
 }
