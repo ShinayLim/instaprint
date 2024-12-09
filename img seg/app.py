@@ -127,6 +127,7 @@ def upload_file():
         
         total_price = 0
         output_images = []
+        original_images = []
 
         # Check file type and process accordingly
         if filename.endswith('.pdf'):
@@ -147,9 +148,15 @@ def upload_file():
             output_image_path = os.path.join(app.config['STATIC_FOLDER'], image_filename)
             cv2.imwrite(output_image_path, output_image)
             output_images.append(image_filename)
+            
+            # Save the original image as well
+            original_image_filename = f"original_page_{idx + 1}.jpg"
+            original_image_path = os.path.join(app.config['STATIC_FOLDER'], original_image_filename)
+            cv2.imwrite(original_image_path, image)
+            original_images.append(original_image_filename)
 
         # Render result page with price and images for each page
-        return render_template('result.html', total_price=total_price, images=output_images)
+        return render_template('result.html', total_price=total_price, original_images=original_images, processed_images=output_images)
 
     else:
         return jsonify({"error": "Invalid file format"}), 400
