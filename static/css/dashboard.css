@@ -102,3 +102,22 @@
   font-size: 14px;
   color: #777;
 }
+
+/* Right Menu */
+.metrics {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.metric {
+  background: #fff;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
