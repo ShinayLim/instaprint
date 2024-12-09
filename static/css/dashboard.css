@@ -10,6 +10,7 @@
   min-height: 100vh;
 }
   
+/* Left Menu */
 .menu {
   width: 250px;
   background-color: #FFFFFF;    color: #292929;
@@ -60,18 +61,7 @@
 .menu a:hover {
   text-decoration: none;
 }
-  
-.content {
-  flex: 1;
-  padding: 20px;
-  background-color: #700000;
-}
-  
-.content h1 {
-  margin-bottom: 20px;
-}
-
-  
+ 
   /* Account Section */
 .account {
   display: flex;
@@ -104,6 +94,16 @@
 }
 
 /* Right Menu */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #700000;
+}
+  
+.content h1 {
+  margin-bottom: 20px;
+}
+
 .metrics {
   display: flex;
   gap: 20px;
