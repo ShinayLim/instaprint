@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
-</head>
-<body>
-    <h1>Welcome to the File Upload Server</h1>
-    <p>Scan the QR code below to upload a file from your device:</p>
-    <img src="{{ qr_code_url }}" alt="QR Code">
-    <p>Or click <a href="{{ upload_url }}">here</a> to upload a file.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uploaded File</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="{{ url_for('static', filename='images/pup-logo.png') }}" alt="Left Logo" />
+      <div class="center-text">INSTAPRINT</div>
+      <img src="{{ url_for('static', filename='images/cpe-logo.png') }}" alt="Right Logo" />
+    </header>
+    <div class="upload-file-container">
+      <div class="scan-qr">
+        <span class="uf-texts">SCAN THIS QR</span>
+        <img class="qr" src="{{ qr_code_url }}" />
+        <p>Or click <a href="{{ upload_url }}">here</a> to upload a file.</p>
+        <span class="uf-texts red">www.instaprint.com</span>
+      </div>
+      <div class="uploaded-file">
+        <h2>Uploaded Files</h2>
+        <div class="file-box">
+          {% for file in files %}
+          <div class="file-entry">
+            {% if file.endswith('.pdf') %}
+            <img src="{{ url_for('static', filename='images/pdf.png') }}" alt="PDF Icon" />
+            {% elif file.endswith('.doc') or file.endswith('.docx') %}
+            <img src="{{ url_for('static', filename='images/microsoftword.png') }}" alt="Word Icon" />
+            {% elif file.endswith('.jpg') or file.endswith('.jpeg') or file.endswith('.png') %}
+            <img src="{{ url_for('static', filename='images/file-upload.png') }}" alt="Image Icon" />
+            {% else %}
+            <img src="{{ url_for('static', filename='images/file-icon.png') }}" alt="File Icon" />
+            {% endif %}
+            <a href="{{ url_for('uploaded_file', filename=file) }}" target="_blank">{{ file }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
