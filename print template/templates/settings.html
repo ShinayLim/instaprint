@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Settings</title>
+  </head>
+  <body>
+    <h1>Set Print Options for {{ filename }}</h1>
+    <form action="/print" method="post">
+      <input type="hidden" name="filename" value="{{ filename }}" />
+
+      <label for="page_size">Page Size:</label>
+      <select name="page_size" id="page_size">
+        <option value="A4">A4</option>
+        <option value="A3">A3</option>
+        <option value="Letter">Letter</option>
+      </select>
+      <br /><br />
+
+      <label for="page_range">Page Range (e.g., 1-5):</label>
+      <input
+        type="text"
+        name="page_range"
+        id="page_range"
+        placeholder="e.g., 1-5"
+      />
+      <br /><br />
+
+      <label for="color">Color Options:</label>
+      <select name="color" id="color">
+        <option value="Color">Color</option>
+        <option value="Black & White">Black & White</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Print</button>
+    </form>
+  </body>
+</html>
