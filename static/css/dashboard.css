@@ -133,3 +133,50 @@
   font-weight: bold;
 }
 
+.statistics {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.history {
+  background: #fff;
+  color: black;
+  border-radius: 8px;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  flex: 0.6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.history .transaction {
+  font-size: 14px;
+  color: #777;
+  font-weight: bold;
+}
+
+.statistics .history .pie {
+  flex: 1 0 200px;
+  max-width: 100px;
+  aspect-ratio: 1;
+  border-width: 1px solid;
+}
+
+
+
+.sales {
+  background: #fff;
+  color: black;
+  border-radius: 8px;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  flex: 1.4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sales .summary {
+  font-size: 14px;
+  color: #777;
+  font-weight: bold;
+}
